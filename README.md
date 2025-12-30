@@ -13,17 +13,19 @@
 **Major steps.**
 
 1) First of all, you need to download and [install Docker Desktop] on your machine. This is basically the software that contains all the tricks for you to run your own containers. Once you finished installing it, open the software which will contain OS-specific examples on how to build Docker images.
+   
 ![Docker](images/Docker_Echidna_Set_Up.png)
 
-3) Clone the Echidna property-based fuzzing tool https://github.com/crytic/echidna so that we use it for our task.
+2) Clone the Echidna property-based fuzzing tool https://github.com/crytic/echidna so that we use it for our task.
 
-4) Since we are using windows we need to install Windows Subsystem for Linux (WSL) which will grant us Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup
+3) Since we are using windows we need to install Windows Subsystem for Linux (WSL) which will grant us Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup
 
  ![WSL]( images/wsl.png)
  
  
-5) Command for running Taxpayer.sol
-  ```docker run -it --rm \
+4) Command for running Taxpayer.sol
+  ```
+  docker run -it --rm \
   -v $PWD:/code \
   -v /usr/local/bin/solc:/usr/bin/solc \
   ghcr.io/crytic/echidna/echidna \
@@ -31,7 +33,8 @@
   ```
 
 5) Command for running Lottery.sol
-  ```docker run -it --rm \
+  ```
+   docker run -it --rm \
   -v $PWD:/code \
   -v /usr/local/bin/solc:/usr/bin/solc \
   ghcr.io/crytic/echidna/echidna \
