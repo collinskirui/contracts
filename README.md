@@ -17,17 +17,19 @@
 3) Since we are using windows we need to install Windows Subsystem for Linux (WSL) which will grant us Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup
  
 4) Command for running Taxpayer.sol
-    docker run -it --rm \
+  ```docker run -it --rm \
   -v $PWD:/code \
   -v /usr/local/bin/solc:/usr/bin/solc \
   ghcr.io/crytic/echidna/echidna \
   echidna /code/Taxpayer.sol --contract Taxpayer
+  ```
 
 5) Command for running Lottery.sol
-    docker run -it --rm \
+  ```docker run -it --rm \
   -v $PWD:/code \
   -v /usr/local/bin/solc:/usr/bin/solc \
   ghcr.io/crytic/echidna/echidna \
   echidna /code/Lottery.sol --contract Lottery
+  ```
 
 
