@@ -14,13 +14,13 @@
 
 1) First of all, you need to download and [install Docker Desktop] on your machine. This is basically the software that contains all the tricks for you to run your own containers. Once you finished installing it, open the software which will contain OS-specific examples on how to build Docker images.
    
-![Docker](../Images/Docker_Echidna_Set_Up.png)
+![Docker](../images/Docker_Echidna_Set_Up.png)
 
 2) Clone the Echidna property-based fuzzing tool https://github.com/crytic/echidna so that we use it for our task.
 
 3) Since we are using windows we need to install Windows Subsystem for Linux (WSL) which will grant us Linux distribution (such as Ubuntu, OpenSUSE, Kali, Debian, Arch Linux, etc) and use Linux applications, utilities, and Bash command-line tools directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup
 
- ![WSL](../Images/wsl.png)
+ ![WSL](../images/wsl.png)
  
  
 4) Command for running Taxpayer.sol
